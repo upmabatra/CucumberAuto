@@ -22,7 +22,7 @@ public class LinkedinStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.linkedin.com/");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
 	}
 	
 	@When("^User enters email$")

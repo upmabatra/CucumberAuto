@@ -16,7 +16,7 @@ public class sharedDriver {
 	public WebDriver Setup() {
 		System.out.println("In before 1");
 		if(driver==null){
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}

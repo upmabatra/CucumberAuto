@@ -22,7 +22,7 @@ public class DataSetStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
 	}
 	
 	@When("^User enters user first name \"([^\"]*)\" parameter$")
