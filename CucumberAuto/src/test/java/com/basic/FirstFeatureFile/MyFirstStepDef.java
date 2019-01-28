@@ -20,7 +20,7 @@ public class MyFirstStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
 		System.out.println("Show URL");
 	}
 	
