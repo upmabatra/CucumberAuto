@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.But;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -14,10 +13,7 @@ import cucumber.api.java.en.When;
 public class MultipleFirstStepDef {
 	
 	WebDriver driver;
-	
-	//System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers");
-	
-//	driver.get("https://www.facebook.com/");
+
 	
 	@Given("^User need to be on Facebook login page$")
 	public void User_need_to_be_on_Facebook_login_page(){
@@ -46,15 +42,15 @@ public class MultipleFirstStepDef {
 	@Then("^User checks user first name is present$")
 	public void User_checks_user_first_name_is_present() throws InterruptedException{
 		
-		//String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_1']")).getAttribute("value"); xpath by the instructor
-		String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_c']")).getAttribute("value");//trying with single quotes in place of double quotes
+
+		String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_c']")).getAttribute("value");
 		Assert.assertEquals("Upma", userNameActual);
 		Thread.sleep(1000);
 	}
 	
 	@Then("^User checks user surname is present$") 
 	public void User_checks_user_surname_is_present() throws InterruptedException{
-		String SurnameActual = driver.findElement(By.xpath("//input[@id=\"u_0_e\"]")).getAttribute("value");//trying with single quotes in place of double quotes
+		String SurnameActual = driver.findElement(By.xpath("//input[@id=\"u_0_e\"]")).getAttribute("value");
 		Assert.assertEquals("Batra", SurnameActual);
 		Thread.sleep(1000);
 		

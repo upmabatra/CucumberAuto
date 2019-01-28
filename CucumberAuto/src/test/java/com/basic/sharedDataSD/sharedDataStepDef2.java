@@ -21,8 +21,8 @@ public class sharedDataStepDef2 {
 	@Then("^User checks user first name \"([^\"]*)\" is present$")
 	public void User_checks_user_first_name_is_present(String userName) throws InterruptedException{
 		
-		//String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_1']")).getAttribute("value"); xpath by the instructor
-		String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_c']")).getAttribute("value");//trying with single quotes in place of double quotes
+
+		String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_c']")).getAttribute("value");
 		Assert.assertEquals(userName, userNameActual);
 		Thread.sleep(1000);
 	}
