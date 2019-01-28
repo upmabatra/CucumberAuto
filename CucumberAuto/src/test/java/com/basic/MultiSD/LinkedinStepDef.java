@@ -12,10 +12,7 @@ import cucumber.api.java.en.When;
 public class LinkedinStepDef {
 	
 	WebDriver driver;
-	
-	//System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers");
-	
-//	driver.get("https://www.facebook.com/");
+
 	
 	@Given("^User need to be on linkedin page$")
 	public void user_need_to_be_on_linkedin_page(){
@@ -28,7 +25,7 @@ public class LinkedinStepDef {
 	@When("^User enters email$")
 	public void user_enters_email() throws InterruptedException{
 		
-		driver.findElement(By.xpath("//*[@id=\"login-email\"]")).sendKeys("Upma");//trying with escape for double quotes
+		driver.findElement(By.xpath("//*[@id=\"login-email\"]")).sendKeys("Upma");
 		Thread.sleep(1000);
 		
 	}
@@ -36,8 +33,8 @@ public class LinkedinStepDef {
 	@Then("^User checks email is present$")
 	public void user_checks_email_is_present() throws InterruptedException{
 		
-		//String userNameActual = driver.findElement(By.xpath("//input[@id='u_0_1']")).getAttribute("value"); xpath by the instructor
-		String userNameActual = driver.findElement(By.xpath("//*[@id=\"login-email\"]")).getAttribute("value");//trying with single quotes in place of double quotes
+
+		String userNameActual = driver.findElement(By.xpath("//*[@id=\"login-email\"]")).getAttribute("value");
 		Assert.assertEquals("Upma", userNameActual);
 		Thread.sleep(1000);
 	}

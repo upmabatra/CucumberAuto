@@ -13,9 +13,7 @@ public class GoogleStepDef {
 	
 	WebDriver driver;
 	
-	//System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers");
-	
-//	driver.get("https://www.facebook.com/");
+
 	
 	@Given("^User need to be on Google page$")
 	public void user_need_to_be_on_Google_page(){
