@@ -13,16 +13,14 @@ public class GoogleStepDef {
 	
 	WebDriver driver;
 	
-	//System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers");
-	
-//	driver.get("https://www.facebook.com/");
+
 	
 	@Given("^User need to be on Google page$")
 	public void user_need_to_be_on_Google_page(){
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 	}
 	
 	@When("^User enters user searches for coding in search bar$")
