@@ -28,7 +28,7 @@ public class DataTableStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 	}
 	
 /*	@When("^User enters user first name is present$")
