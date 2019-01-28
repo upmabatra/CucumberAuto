@@ -22,7 +22,7 @@ public class GoogleStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 	}
 	
 	@When("^User enters user searches for coding in search bar$")

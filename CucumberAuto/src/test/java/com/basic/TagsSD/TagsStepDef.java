@@ -24,7 +24,7 @@ public class TagsStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 	}
 	
 	

@@ -16,7 +16,7 @@ public class sharedDriver {
 	public WebDriver Setup() {
 		System.out.println("In before 1");
 		if(driver==null){
-		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	}

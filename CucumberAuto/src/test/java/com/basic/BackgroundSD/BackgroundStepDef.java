@@ -23,7 +23,7 @@ public class BackgroundStepDef {
 		
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");//C:\\Users\\batra\\Desktop\\Udemy\\cucumber\\drivers\\chromedriver.exe
-		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 	}
 	
 	@When("^User enters user first name \"([^\"]*)\" parameter$")

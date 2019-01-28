@@ -36,7 +36,7 @@ public class hooksStepDef {
 	public void User_need_to_be_on_Facebook_login_page(){
 		
 		
-		System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver.exe");
 	}
 	
 	@When("^User enters user first name \"([^\"]*)\" parameter$")
